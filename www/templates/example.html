@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cockpit </title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="icon" href="/static/img/icon/favicon.ico" type="image/x-icon">
+<!--    <link href="/site/theme/css/site.css?ver=2019-08-21" type="text/css" rel="stylesheet">-->
+    <script src="/static/js/jquery.min.js" type="text/javascript"></script>
+    <script src="/static/js/uikit.min.js" type="text/javascript"></script>
+<!--    <script src="/site/theme/js/site.js?ver=2019-08-21" type="text/javascript"></script>-->
+
+</head>
+<body>
+
+<section class="site-header uk-position-relative">
+
+    <div class="uk-navbar">
+
+        <div class="uk-container uk-container-center">
+
+            <a class="uk-navbar-brand" href="/">
+                <img class="uk-margin-small-right" src="/site/assets/cockpit.svg" alt="Logo" width="30">
+                Cockpit
+            </a>
+
+            <div class="uk-navbar-flip">
+                <div class="uk-navbar-content uk-hidden-small">
+                    <a class="uk-margin-right" href="https://twitter.com/getcockpit" title="Twitter"><i
+                            class="uk-icon-twitter"></i></a>
+                    <a class="uk-margin-right uk-link-muted" href="https://github.com/agentejo/cockpit"
+                       title="Github"><i class="uk-icon-github"></i></a>
+                    <a class="uk-button uk-button-outline uk-button-primary" href="/download">Get Cockpit</a>
+                </div>
+            </div>
+
+            <div class="uk-navbar-center uk-hidden-small">
+
+
+                <ul class="uk-navbar-nav" data-level="0">
+
+
+                    <li class="">
+                        <a href="/documentation">Documentation</a>
+
+                    </li>
+
+
+                    <li class="">
+                        <a href="/support">Support</a>
+
+                    </li>
+
+
+                    <li class="">
+                        <a href="/about">About</a>
+
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<main class="site-main uk-margin-large-top">
+
+
+    <style>
+
+        .hue-rotate {
+            animation: hue-rotation 10s linear 0ms infinite !important;
+        }
+
+        .uk-block.hue-rotate {
+            background-color: pink;
+            background-image: radial-gradient(farthest-corner at 45px 45px, pink 0%, #d1e6fa 100%);
+        }
+
+        @keyframes hue-rotation {
+            0% {
+                filter: hue-rotate(0);
+            }
+            100% {
+                filter: hue-rotate(360deg);
+            }
+        }
+    </style>
+
+    <div class="uk-block uk-text-center uk-text-lighter">
+        <div class="uk-container uk-container-center">
+            <h1>Simple Content Platform<br>to manage any structured content</h1>
+            <p class="uk-h2 uk-text-muted">A self-hosted headless and api-driven CMS</p>
+
+            <p class="uk-margin-large-top uk-h1 hue-rotate"><span class="uk-text-danger">Build.</span> <span
+                    class="uk-text-primary">Connect.</span> <span class="uk-text-warning">Deliver.</span></p>
+        </div>
+    </div>
+
+    <div class="uk-block uk-block-primary uk-text-center hue-rotate site-block-wave-b" style="margin-top:20vh;">
+        <div class="uk-container uk-container-center" style="margin-top:-22vh;">
+            <div class="browser">
+                <div class="browser-title-bar">
+                    <div class="close"></div>
+                    <div class="min"></div>
+                    <div class="max"></div>
+                </div>
+                <div class="browser-content uk-position-relative">
+                    <img src="/content/screen.png" alt="Screenshot">
+                </div>
+            </div>
+
+            <div class="browser uk-width-2-3" style="margin-top:-20vh;">
+                <div class="browser-title-bar">
+                    <div class="close"></div>
+                    <div class="min"></div>
+                    <div class="max"></div>
+                </div>
+                <div class="browser-content uk-position-relative uk-contrast" style="background: #020005;">
+    <pre class="uk-panel-space uk-text-left uk-text-h5 console uk-margin-remove"><strong
+            class="uk-text-primary">$</strong> curl <span class="uk-text-warning">'https://domain.com/api/collections/get/posts?token=e37c44cd4c67fbf3'</span>
+    [
+        {
+            "_id": "34hgj4892381b31134mkl",
+            "title": "Hello World",
+            "content": "...",
+            "tags": ["info"]
+        },
+        {
+            "_id": "34hgj4892381b31134mkl",
+            "title": "First Post",
+            "content": "...",
+            "tags": ["general"]
+        }
+    ]
+    </pre>
+                </div>
+            </div>
+
+            <div class="uk-grid uk-margin-large uk-flex-center" data-uk-grid-margin>
+                <div><img class="svg-colored uk-text-contrast" src="/site/assets/icons/js.svg" data-uk-svg alt="JS">
+                </div>
+                <div><img class="svg-colored uk-text-contrast" src="/site/assets/icons/nodejs.svg" data-uk-svg
+                          alt="Node"></div>
+                <div><img class="svg-colored uk-text-contrast" src="/site/assets/icons/ruby.svg" data-uk-svg alt="Ruby">
+                </div>
+                <div><img class="svg-colored uk-text-contrast" src="/site/assets/icons/php.svg" data-uk-svg alt="PHP">
+                </div>
+                <div><img class="svg-colored uk-text-contrast" src="/site/assets/icons/console.svg" data-uk-svg
+                          alt="Console"></div>
+            </div>
+            <p class="uk-text-contrast uk-text-uppercase uk-text-small">
+                Choose your favorite language
+            </p>
+        </div>
+
+
+    </div>
+
+
+    <div class="uk-block uk-text-center">
+
+        <div class="uk-container uk-container-center">
+
+            <h1>Why Cockpit?</h1>
+
+            <div class="uk-grid uk-grid-match uk-grid-width-medium-1-3 uk-margin-large-top" data-uk-grid-margin>
+                <div class="uk-flex-order-last-small uk-flex-order-first-medium">
+                    <div class="uk-panel uk-panel-space uk-panel-box">
+                        <h3 class="uk-text-bolder">Self-hosted</h3>
+                        <p class="uk-text-muted">Keep complete control. Your data is and will be always yours.</p>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="uk-panel uk-panel-space uk-panel-box uk-panel-shadow">
+                        <h3 class="uk-text-bolder">Open Source</h3>
+                        <p class="uk-text-muted">
+                            We <span class="uk-icon-heart uk-text-danger"></span> Open Source and Cockpit is our
+                            contribution we would like to share with the world.
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-panel uk-panel-space uk-panel-box">
+                        <h3 class="uk-text-bolder">Clients will love it</h3>
+                        <p class="uk-text-muted">Cockpit comes with an intuitive design and UX which makes it a joy to
+                            manage the content.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <p class="uk-h2 uk-text-primary uk-width-medium-3-4 uk-margin-large-top uk-container-center uk-text-lighter">
+                <span class="uk-text-bolder">Cockpit is awesome</span> if you need a <span class="uk-text-bolder">flexible content structure</span>
+                but don't want to be limited in how to use the content.
+                Cockpit is a perfect match if you want to <span class="uk-text-bolder">support multiple devices</span>
+                or need a content management UI for static site builders.
+                Build unique applications and let Cockpit feed them with content.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="uk-block uk-block-muted uk-text-center">
+        <div class="uk-container uk-container-center">
+
+            <p class="uk-text-bold uk-text-large">Cross-Channel Content Distribution</p>
+            <p class="uk-text-muted">Web, App, Smart Device, IoT</p>
+            <div class="uk-width-medium-1-2 uk-container-center uk-margin-large">
+                <div class="uk-grid uk-grid-width-1-2 uk-grid-width-medium-1-3 uk-flex-middle uk-flex-center uk-text-center"
+                     data-uk-grid-margin>
+                    <div><img class="svg-colored uk-text-muted" width="80" src="/site/assets/icons/desktop_mouse.svg"
+                              data-uk-svg></div>
+                    <div><img class="svg-colored uk-text-muted" width="80" src="/site/assets/icons/mobile_cloud.svg"
+                              data-uk-svg></div>
+                    <div><img class="svg-colored uk-text-muted" width="80" src="/site/assets/icons/tv.svg" data-uk-svg>
+                    </div>
+                    <div><img class="svg-colored uk-text-muted" width="80" src="/site/assets/icons/smartwatch.svg"
+                              data-uk-svg></div>
+                    <div><img class="svg-colored uk-text-muted" width="80" src="/site/assets/icons/desktop.svg"
+                              data-uk-svg></div>
+                    <div><img class="svg-colored uk-text-muted" width="80" src="/site/assets/icons/internetapp.svg"
+                              data-uk-svg></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="uk-block uk-block-secondary uk-text-center uk-nbfc">
+        <canvas class="uk-position-top" style="opacity:.8;" color-swarm h="4/5"></canvas>
+        <div class="uk-container uk-container-center uk-position-relative">
+            <div>
+
+                <h2 class="uk-h1">Some key features</h2>
+                <div class="uk-margin uk-h2 uk-text-lighter">Simple. Powerful. Open Source. Enjoy developing.</div>
+
+                <p><img class="svg-colored uk-text-primary" src="/site/assets/icons/features.svg" width="80" height="80"
+                        alt="Features" data-uk-svg></p>
+
+                <ul class="uk-grid uk-grid-match uk-grid-width-medium-1-3 uk-flex-center uk-text-lighter">
+                    <li class="uk-grid-margin">
+                        <div class="uk-panel uk-panel-space uk-panel-box uk-panel-box-contrast">
+                            <p><img class="svg-colored uk-text-primary" src="/site/assets/icons/checkmark.svg"
+                                    width="30" height="30" alt="Features" data-uk-svg></p>
+                            <p><strong>Dead simple installation</strong> in less than one minute. Kickstart your your
+                                next project without any hassle.</p>
+                        </div>
+                    </li>
+                    <li class="uk-grid-margin">
+                        <div class="uk-panel uk-panel-space uk-panel-box uk-panel-box-contrast">
+                            <p><img class="svg-colored uk-text-primary" src="/site/assets/icons/checkmark.svg"
+                                    width="30" height="30" alt="Features" data-uk-svg></p>
+                            <p>A <strong>simple but powerful</strong> headless CMS that is built around an API-first and
+                                JSON content approach.</p>
+                        </div>
+                    </li>
+                    <li class="uk-grid-margin">
+                        <div class="uk-panel uk-panel-space uk-panel-box uk-panel-box-contrast">
+                            <p><img class="svg-colored uk-text-primary" src="/site/assets/icons/checkmark.svg"
+                                    width="30" height="30" alt="Features" data-uk-svg></p>
+                            <p><strong>SQLite or MongoDB</strong>, your choice. Use Cockpit for quick and simple
+                                projects or utilize MongoDB for larger ones.</p>
+                        </div>
+                    </li>
+                    <li class="uk-grid-margin">
+                        <div class="uk-panel uk-panel-space uk-panel-box uk-panel-box-contrast">
+                            <p><img class="svg-colored uk-text-primary" src="/site/assets/icons/checkmark.svg"
+                                    width="30" height="30" alt="Features" data-uk-svg></p>
+                            <p>A system which <strong>invites to extend</strong> with custom code. Build a solution to
+                                any problem.</p>
+                        </div>
+                    </li>
+                    <li class="uk-grid-margin">
+                        <div class="uk-panel uk-panel-space uk-panel-box uk-panel-box-contrast">
+                            <p><img class="svg-colored uk-text-primary" src="/site/assets/icons/checkmark.svg"
+                                    width="30" height="30" alt="Features" data-uk-svg></p>
+                            <p>Cockpit is not a web site builder. <strong>It is a content provider.</strong> Consume the
+                                content the way you want.</p>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="uk-margin-large-top uk-margin-large-bottom uk-text-lighter uk-text-primary uk-h1">
+                    Build anything you can imagine.
+                </div>
+
+            </div>
+
+            <h2 class="uk-h1 uk-text-danger"><i class="uk-icon-heart pulse-animation-infinite"></i></h2>
+
+            <style>.uk-invisible {
+                opacity: 0;
+            }</style>
+
+            <div class="uk-grid uk-grid-width-medium-1-3 uk-flex-center"
+                 data-uk-scrollspy="target:'.uk-grid-margin', cls:'uk-animation-slide-bottom uk-invisible', delay:300">
+
+                <div class="uk-grid-margin uk-invisible">
+                    <blockquote class="twitter-tweet" data-lang="de"><p lang="en" dir="ltr"><a
+                            href="https://twitter.com/getcockpit?ref_src=twsrc%5Etfw">@getcockpit</a> + <a
+                            href="https://twitter.com/nuxt_js?ref_src=twsrc%5Etfw">@nuxt_js</a> = best self-hosted,
+                        headless CMS solution I&#39;ve seen to date. Working on a prototype now. So far it&#39;s working
+                        better than I expected! <a
+                                href="https://twitter.com/hashtag/VueJS?src=hash&amp;ref_src=twsrc%5Etfw">#VueJS</a></p>&mdash;
+                        Chris Schweda (@metaincognita) <a
+                                href="https://twitter.com/metaincognita/status/989927223602896896?ref_src=twsrc%5Etfw">27.
+                            April 2018</a></blockquote>
+                </div>
+
+                <div class="uk-grid-margin uk-invisible">
+                    <blockquote class="twitter-tweet" data-lang="de"><p lang="en" dir="ltr">I may have reached fully
+                        static + CMS sourced nirvana with <a href="https://twitter.com/nuxt_js?ref_src=twsrc%5Etfw">@nuxt_js</a>
+                        and <a href="https://twitter.com/getcockpit?ref_src=twsrc%5Etfw">@getcockpit</a>.</p>&mdash;
+                        Stephen Hallgren (@Teevio) <a
+                                href="https://twitter.com/Teevio/status/963178506296418304?ref_src=twsrc%5Etfw">12.
+                            Februar 2018</a></blockquote>
+                </div>
+
+                <div class="uk-grid-margin uk-invisible">
+                    <blockquote class="twitter-tweet" data-lang="de"><p lang="en" dir="ltr">Stunning headless API first
+                        CMS &gt; <a href="https://t.co/1K2gUWrBVZ">https://t.co/1K2gUWrBVZ</a> Perfect tag team with <a
+                                href="https://twitter.com/hashtag/VueJS?src=hash&amp;ref_src=twsrc%5Etfw">#VueJS</a> <a
+                                href="https://twitter.com/getcockpit?ref_src=twsrc%5Etfw">@getcockpit</a> <a
+                                href="https://twitter.com/hashtag/JAM?src=hash&amp;ref_src=twsrc%5Etfw">#JAM</a> <a
+                                href="https://twitter.com/hashtag/SSG?src=hash&amp;ref_src=twsrc%5Etfw">#SSG</a> <a
+                                href="https://twitter.com/hashtag/gohugo?src=hash&amp;ref_src=twsrc%5Etfw">#gohugo</a>
+                    </p>&mdash; Gommaar Delneste (@gdelneste) <a
+                            href="https://twitter.com/gdelneste/status/933375236657082368?ref_src=twsrc%5Etfw">22.
+                        November 2017</a></blockquote>
+                </div>
+
+                <div class="uk-grid-margin uk-invisible">
+                    <blockquote class="twitter-tweet" data-lang="de"><p lang="en" dir="ltr">Tried <a
+                            href="https://twitter.com/getcockpit?ref_src=twsrc%5Etfw">@getcockpit</a> <a
+                            href="https://twitter.com/hashtag/apidrivenCMS?src=hash&amp;ref_src=twsrc%5Etfw">#apidrivenCMS</a>
+                        for the first time and it’s amazing <a
+                                href="https://twitter.com/hashtag/JAMstack?src=hash&amp;ref_src=twsrc%5Etfw">#JAMstack</a>
+                    </p>&mdash; Timo Burmeister (@timo_burmeister) <a
+                            href="https://twitter.com/timo_burmeister/status/933317191189090304?ref_src=twsrc%5Etfw">22.
+                        November 2017</a></blockquote>
+                </div>
+
+                <div class="uk-grid-margin uk-invisible">
+                    <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a
+                            href="https://twitter.com/getcockpit">@getcockpit</a> your CMS is awesome, thanks a lot</p>&mdash;
+                        Michaël Villeneuve (@michael_vil) <a
+                                href="https://twitter.com/michael_vil/status/704252952354144256">29. Februar 2016</a>
+                    </blockquote>
+                </div>
+                <div class="uk-grid-margin uk-invisible">
+                    <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">After testing, i think that
+                        <a href="https://twitter.com/getcockpit">@getcockpit</a> is going to be the CMS of my next
+                        project. A perfect approach and i can keep Laravel <a
+                                href="https://twitter.com/hashtag/dev?src=hash">#dev</a> <a
+                                href="https://twitter.com/hashtag/cms?src=hash">#cms</a></p>&mdash; jc suzanne
+                        (@jcsuzanne) <a href="https://twitter.com/jcsuzanne/status/526449833528553472">26. Oktober
+                            2014</a></blockquote>
+                </div>
+
+                <div class="uk-grid-margin uk-invisible">
+                    <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Handling forms with <a
+                            href="https://twitter.com/getcockpit">@getcockpit</a> is such a breeze, I love it.</p>&mdash;
+                        CoderMcCodeFace (@dupertuiseric) <a
+                                href="https://twitter.com/dupertuiseric/status/659373033879175169">28. Oktober 2015</a>
+                    </blockquote>
+                </div>
+                <div class="uk-grid-margin uk-invisible">
+                    <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">so glad i finally found <a
+                            href="https://twitter.com/getcockpit">@getcockpit</a> - a simple, user friendly CMS that is
+                        -wait for it- unopinionated about your front end <a
+                                href="https://twitter.com/hashtag/finally?src=hash">#finally</a></p>&mdash; Angelina
+                        Bethoney (@oxangiemarie) <a href="https://twitter.com/oxangiemarie/status/622110785054056448">17.
+                            Juli 2015</a></blockquote>
+                </div>
+                <div class="uk-grid-margin uk-invisible">
+                    <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">I think I may have just
+                        found my new cms <a href="https://twitter.com/getcockpit">@getcockpit</a> . API driven and it&#39;s
+                        open source! Just what I&#39;ve been looking for. Awesome!</p>&mdash; DeAndre (@drePHRESHR) <a
+                            href="https://twitter.com/drePHRESHR/status/494208017106087937">29. Juli 2014</a>
+                    </blockquote>
+                </div>
+                <div class="uk-grid-margin uk-invisible">
+                    <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Check out <a
+                            href="https://twitter.com/getcockpit">@getcockpit</a>, it is amazing, Where have you been
+                        all my life! <a href="https://twitter.com/hashtag/PHP?src=hash">#PHP</a></p>&mdash; David D&#39;hont
+                        (@Blaxus) <a href="https://twitter.com/Blaxus/status/635182099385974784">22. August 2015</a>
+                    </blockquote>
+                </div>
+                <div class="uk-grid-margin uk-invisible">
+                    <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Looking for a kickass tool
+                        to create b-office quickly with a REST API, users... check <a href="http://t.co/WqTT1XaxGJ">http://t.co/WqTT1XaxGJ</a>.
+                        Thx <a href="https://twitter.com/getcockpit">@getcockpit</a>. :) <a
+                                href="https://twitter.com/hashtag/awesome?src=hash">#awesome</a></p>&mdash; Olivier
+                        Destenay (@_tsbits) <a href="https://twitter.com/_tsbits/status/590444949000294400">21. April
+                            2015</a></blockquote>
+                </div>
+                <div class="uk-grid-margin uk-invisible">
+                    <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Just installed <a
+                            href="https://twitter.com/getcockpit">@getcockpit</a>; If you&#39;re a web developer, this
+                        is a must-check-out <a href="https://twitter.com/hashtag/cokcpit?src=hash">#cokcpit</a> <a
+                                href="https://twitter.com/hashtag/cms?src=hash">#cms</a> <a
+                                href="https://twitter.com/hashtag/php?src=hash">#php</a></p>&mdash; Jesse Luoto
+                        (@luotojesse) <a href="https://twitter.com/luotojesse/status/485105560149585920">4. Juli
+                            2014</a></blockquote>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="uk-block uk-text-center">
+
+        <div class="uk-container uk-container-center">
+
+            <div class="uk-panel-space uk-panel-shadow">
+
+                <p class="uk-h1 uk-text-bold uk-margin-large-top">Awesome that you came so far</p>
+
+                <p class="uk-text-large uk-text-muted">Now get Cockpit and start build great stuff.</p>
+
+                <p class="uk-margin-large">
+                    <a class="uk-button uk-button-large uk-button-outline uk-button-primary" href="/download">Get
+                        Cockpit</a>
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <style>
+        ::shadow .EmbeddedTweet {
+            border: none;
+        }
+    </style>
+
+</main>
+
+<footer class="site-footer uk-margin-large-top">
+
+    <div class="uk-container uk-container-center">
+        <div class="uk-grid" data-uk-grid-margin>
+            <div>
+                <strong class="uk-text-small">Built with <a href="https://github.com/agentejo/copilot"><i
+                        class="uk-icon-heart uk-text-danger"></i> Copilot</a></strong>
+            </div>
+            <div class="uk-flex-item-1">
+                <a class="uk-margin-right" href="https://twitter.com/getcockpit" title="Twitter"><i
+                        class="uk-icon-twitter"></i></a>
+                <a class="uk-margin-right uk-link-muted" href="https://github.com/agentejo/cockpit" title="Github"><i
+                        class="uk-icon-github"></i></a>
+            </div>
+            <div>
+                <ul class="uk-nav uk-text-small">
+                    <li class="uk-nav-header">Company</li>
+                    <li><a class="uk-link-muted" href="/about">About</a></li>
+                    <li><a class="uk-link-muted" href="/privacy">Privacy</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul class="uk-nav uk-text-small">
+                    <li class="uk-nav-header">Product</li>
+                    <li><a class="uk-link-muted" href="/documentation">Documentation</a></li>
+                    <li><a class="uk-link-muted" href="/support">Support</a></li>
+                    <li><a class="uk-link-muted" href="/download">Download</a></li>
+                </ul>
+            </div>
+            <div class="uk-text-right uk-text-center-small">
+                <span class="uk-text-small uk-text-muted">Cockpit is a product by <a class="uk-link-muted"
+                                                                                     href="https://agentejo.com"><strong>Agentejo</strong></a></span>
+            </div>
+        </div>
+
+    </div>
+
+</footer>
+
+<script type="text/javascript">
+
+    if (location.host != 'localhost') {
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-38575816-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+
+
+        var _paq = _paq || [];
+        // tracker methods like "setCustomDimension" should be called before "trackPageView"
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function () {
+            var u = "//analytics.agentejo.com/";
+            _paq.push(['setTrackerUrl', u + 'piwik.php']);
+            _paq.push(['setSiteId', '2']);
+            var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+            g.type = 'text/javascript';
+            g.async = true;
+            g.defer = true;
+            g.src = u + 'piwik.js';
+            s.parentNode.insertBefore(g, s);
+        })();
+
+    }
+</script>
+
+</body>
+</html>
